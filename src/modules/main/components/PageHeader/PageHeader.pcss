@@ -1,0 +1,55 @@
+.container {
+  background-color: white;
+  height: 90px;
+  color: black;
+  box-shadow: 0.3px 5px 10px 0 rgba(203, 230, 244, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  margin-top: 12px;
+}
+
+.logo:hover {
+  color: black;
+}
+
+.logoImg {
+  margin-right: 6px;
+}
+
+.alphaLabel {
+  color: #e20909;
+  font-size: 12px;
+  position: relative;
+  top: -18px;
+}
+
+.description {
+  color: #4b5158;
+  order: 1;
+  align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 80px;
+  }
+
+  .content {
+    flex-wrap: nowrap;
+  }
+
+  .description {
+    align-self: initial;
+    margin-left: 20px;
+    top: 0;
+    order: 0;
+  }
+}

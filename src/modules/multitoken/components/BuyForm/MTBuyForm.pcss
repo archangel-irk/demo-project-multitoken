@@ -1,0 +1,45 @@
+.container {
+
+}
+
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.fromLabel {
+  display: flex;
+  align-items: center;
+  padding-top: 5px; /* for button outline */
+}
+
+.fromLabelText {
+  margin-right: 5px;
+}
+
+.balance {
+  color: #687dfa;
+  margin-left: auto;
+
+  & button {
+    background: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin-right: 5px; /* for button outline */
+  }
+}
+
+.rate {
+
+}
+
+.rateUsd {
+  color: #687dfa;
+}
+
+.gasNotice {
+  & :global(.ant-alert-message) {
+    font-size: 14px;
+  }
+}

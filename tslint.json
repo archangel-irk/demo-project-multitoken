@@ -1,0 +1,33 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "public/**/*",
+      "config-overrides.js",
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "curly": [true, "ignore-same-line"],
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": {
+      "options": {
+        "grouped-imports": true,
+        "import-sources-order": "case-insensitive",
+        "module-source-path": "full",
+        "named-imports-order": "case-insensitive"
+      }
+    },
+    "member-access": [true, "no-public"],
+    "jsx-boolean-value": ["never"],
+    "jsx-no-lambda": [false],
+
+    "no-unexpected-multiline": true
+  }
+}

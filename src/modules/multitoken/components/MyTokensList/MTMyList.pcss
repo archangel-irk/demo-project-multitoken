@@ -1,0 +1,382 @@
+.container {
+
+}
+
+.table {
+  & :global(.ant-table-placeholder) {
+    border-bottom: none;
+  }
+
+  & :global(.ant-spin) {
+    top: 20px;
+  }
+
+  & table {
+    display: block;
+  }
+
+  & thead {
+    display: none;
+  }
+
+  & thead tr {
+    display: flex;
+    min-width: 100%;
+  }
+
+  & thead th {
+    background-color: transparent;
+    font-size: 16px;
+    color: #8e9eb2;
+    border-bottom: none;
+
+    min-width: 70px;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  & tbody {
+    display: block;
+  }
+
+  & tr > td {
+    display: block;
+    padding: 0;
+    min-width: 70px;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  & tr:last-child > td {
+    border-bottom: none;
+  }
+
+  /* Table headers */
+  & .columnNameHeader {
+    margin-left: 28px;
+  }
+
+  /* Table columns */
+  & .columnName {
+    order: 1;
+  }
+
+  & .columnAmount {
+    display: none;
+    text-align: right;
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  & .columnProfit {
+    order: 2;
+    text-align: right;
+    min-width: 120px;
+    max-width: 120px;
+  }
+
+  & .columnChange {
+    display: none;
+    text-align: right;
+    min-width: 85px;
+    max-width: 130px;
+    word-break: keep-all;
+  }
+
+  & .columnPrice {
+    order: 3;
+    text-align: right;
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  & .columnActions {
+    display: none;
+  }
+}
+
+.row {
+  display: flex;
+  min-width: 100%;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+/* Table cells */
+.token {
+  padding: 17px 5px 18px 10px;
+}
+
+.tokenPosition {
+  display: none;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #6a8098;
+  white-space: nowrap;
+  min-width: 18px;
+}
+
+.tokenImg {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.tokenNameAndTicker {
+  overflow: auto;
+}
+
+.tokenName {
+  font-size: 16px;
+  color: #6a8098;
+
+  text-decoration: underline;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover {
+    color: #5f89ff;
+  }
+}
+
+.tokenTicker {
+  font-size: 10px;
+  color: #6a8098;
+}
+
+.amount {
+  flex-direction: row-reverse;
+  color: #2d2f32;
+  font-size: 16px;
+
+  &:hover {
+    color: #2d2f32;
+  }
+}
+
+.profit {
+  flex-direction: row-reverse;
+  color: #2d2f32;
+  font-size: 16px;
+  align-items: flex-start;
+  padding: 17px 5px 18px 10px;
+
+  &:hover {
+    color: #2d2f32;
+  }
+}
+
+.price {
+  flex-direction: row-reverse;
+  color: #2d2f32;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 17px;
+  align-items: start;
+
+  &:hover {
+    color: #2d2f32;
+  }
+
+  & .change {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.changeLink {
+
+}
+
+.change {
+  color: #2d2f32;
+}
+
+.changeUp {
+  color: #00c18d;
+}
+
+.changeDown {
+  color: #fe4345;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  & button {
+    margin-right: 5px;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  & button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .table {
+    & .columnName {
+      flex-grow: 2;
+    }
+
+    & .columnProfit {
+      min-width: 75px;
+    }
+
+    & .columnPrice {
+      min-width: 70px;
+    }
+  }
+
+  .tokenImg {
+    height: 20px;
+  }
+}
+
+@media (min-width: 360px) {
+  .table {
+    & .columnName {
+      flex-grow: 2;
+    }
+
+    & .columnProfit {
+      min-width: 106px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .table {
+    & thead {
+      display: block;
+    }
+
+    & thead {
+      display: block;
+    }
+
+    & thead th {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    & tr > td {
+      border-bottom: none;
+    }
+
+    & tr:hover > td:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    & tr:hover > td:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    & .columnName {
+      min-width: 160px;
+    }
+
+    & .columnAmount {
+      order: 2;
+      display: block;
+    }
+
+    & .columnProfit {
+      order: 3;
+      min-width: 120px;
+    }
+
+    & .columnChange {
+      order: 4;
+      display: block;
+    }
+
+    & .columnPrice {
+      order: 5;
+      min-width: 120px;
+    }
+
+    & .columnActions {
+      display: block;
+      order: 6;
+      flex-grow: 2;
+      min-width: 200px;
+      max-width: 205px;
+    }
+  }
+
+  .cell {
+    padding: 0 10px;
+  }
+
+  .token {
+    padding: 15px 10px;
+  }
+
+  .tokenPosition {
+    display: block;
+  }
+
+  .tokenImg {
+    height: 25px;
+    margin-right: 14px;
+  }
+
+  .profit {
+    align-items: center;
+  }
+
+  .changeLink {
+    justify-content: flex-end;
+  }
+
+  .price {
+    align-items: center;
+
+    & .change {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .table {
+    & thead th {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    & .columnName {
+      min-width: 200px;
+    }
+
+    & .columnActions {
+      min-width: 225px;
+      max-width: 225px;
+    }
+  }
+
+  .cell {
+    padding: 0 16px;
+  }
+
+  .token {
+    padding: 15px 16px;
+  }
+
+  .actions button {
+    margin-right: 20px;
+  }
+}

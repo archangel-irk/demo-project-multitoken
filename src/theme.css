@@ -1,0 +1,36 @@
+.ant-btn {
+  font-size: 16px;
+}
+
+.ant-btn-primary,
+.ant-btn-primary:active,
+.ant-btn-primary:focus,
+.ant-btn-primary:hover {
+  /*border-color: #a254c1;*/
+  /*border-image: linear-gradient(to top, #a254c1, #677efb);*/
+  border: none;
+  background-image: linear-gradient(to top, #a254c1, #677efb);
+}
+
+.ant-btn-danger,
+.ant-btn-danger:active,
+.ant-btn-danger:focus,
+.ant-btn-danger:hover {
+  color: #ffffff;
+  border: none;
+  background-image: linear-gradient(to top, #bc39b2, #f9757d);
+}
+
+.ant-btn.disabled,
+.ant-btn[disabled],
+.ant-btn.disabled:hover,
+.ant-btn[disabled]:hover,
+.ant-btn.disabled:focus,
+.ant-btn[disabled]:focus,
+.ant-btn.disabled:active,
+.ant-btn[disabled]:active,
+.ant-btn.disabled.active,
+.ant-btn[disabled].active {
+  background-image: linear-gradient(to top, #c5c5c5, #efefef);
+  color: white;
+}

@@ -1,0 +1,271 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & .section:first-child {
+    margin-top: 20px;
+  }
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.content {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(203, 230, 244, 0.3);
+  padding: 20px 10px;
+
+  & header {
+    font-size: 24px;
+    color: #2d2f32;
+  }
+}
+
+.main {
+
+  & > .actions {
+    display: flex;
+  }
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  & > .actions {
+    display: none;
+  }
+}
+
+.mTokenImg {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  margin-right: 20px;
+}
+
+.mTokenName {
+  font-size: 24px;
+  color: #2d2f32;
+}
+
+.mTokenSymbol {
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+.descriptionLabel {
+  display: none;
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.actions {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  & button {
+    flex-grow: 1;
+    height: 40px;
+  }
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+}
+
+.number {
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.numberTitle {
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.numberValue {
+  font-size: 24px;
+  color: #2d2f32;
+}
+
+.numberSecondValue {
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.change {
+  color: #2d2f32;
+}
+
+.changeUp {
+  color: #00c18d;
+}
+
+.changeDown {
+  color: #fe4345;
+}
+
+
+.profit {
+  color: #2d2f32;
+}
+
+.profitUp {
+  color: #00c18d;
+}
+
+.profitDown {
+  color: #fe4345;
+}
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+}
+
+.walletItem {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.walletLabel {
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.walletValue {
+  font-size: 24px;
+  color: #2d2f32;
+}
+
+.walletAmount {
+
+}
+
+.walletPrice {
+  display: none;
+}
+
+.walletProfit {
+
+}
+
+.walletActions {
+
+}
+
+
+.tokens {
+
+}
+
+.tokensHeader {
+  font-size: 16px;
+  color: #8e9eb2;
+  margin-bottom: 10px;
+}
+
+.tokensWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.token {
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.tokenImg {
+  max-height: 28px;
+  max-width: 28px;
+}
+
+.tokenPercentIndicator {
+  margin-right: 20px;
+}
+
+.tokenInfo {
+
+}
+
+.tokenName {
+  font-size: 16px;
+  color: #8e9eb2;
+}
+
+.tokenPercent {
+  font-size: 24px;
+  color: #2d2f32;
+}
+
+@media (min-width: 576px) {
+  .content {
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .main {
+
+    & > .actions {
+      display: none;
+    }
+  }
+
+  .mainHeader {
+    margin-bottom: 40px;
+
+    & > .actions {
+      display: flex;
+    }
+  }
+
+  .descriptionLabel {
+    display: block;
+  }
+
+  .mTokenImg {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+  }
+
+  .wallet {
+    flex-direction: row;
+  }
+
+  .walletAmount {
+    width: 260px;
+  }
+
+  .walletItem {
+    margin-bottom: 0;
+  }
+
+  .tokens {
+    & .tokensWrapper {
+      justify-content: normal;
+    }
+
+    & .token {
+      flex-basis: auto;
+      width: 250px;
+    }
+  }
+}
